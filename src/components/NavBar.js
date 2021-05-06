@@ -1,31 +1,24 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Projects from "../containers/Projects.js";
+import Pets from "../containers/Pets.js";
+import Contact from "../containers/Contact.js";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-custom">
-      <NavLink className="navbar-brand d-none d-lg-inline-block" to="/" exact>
-        AC Planner
-      </NavLink>
-
-      <div className="navbar-nav ml-auto flex-nowrap" id="myNavbar">
-        <NavLink className="nav-link" to="/bugs" exact>
-          Resume
-        </NavLink>
-
-        <NavLink className="nav-link" to="/fish" exact>
-          Projects
-        </NavLink>
-
-        <NavLink className="nav-link" to="/fossils" exact>
-          About Me
-        </NavLink>
-
-        <NavLink className="nav-link" to="/villagers" exact>
-          Villagers
-        </NavLink>
-      </div>
-    </nav>
+    <Navbar>
+      <Nav className="mr-auto">
+        <Nav.Link href="#">Jack Cole</Nav.Link>
+      </Nav>
+      <Nav className="justify-content-end">
+        <Nav.Link href="#">About</Nav.Link>
+        <Nav.Link href="#projects">Projects</Nav.Link>
+        <Nav.Link href="#pets">Pets</Nav.Link>
+        <Nav.Link href="#contact">Contact</Nav.Link>
+        <Nav.Link href="#resume">Resume</Nav.Link>
+      </Nav>
+    </Navbar>
   );
 };
 
