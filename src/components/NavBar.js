@@ -7,17 +7,28 @@ import Nav from "react-bootstrap/Nav";
 
 const NavBar = () => {
   return (
-    <Navbar>
-      <Nav className="mr-auto">
-        <Nav.Link href="#">Jack Cole</Nav.Link>
-      </Nav>
-      <Nav className="justify-content-end">
-        <Nav.Link href="#">About</Nav.Link>
-        <Nav.Link href="#projects">Projects</Nav.Link>
-        <Nav.Link href="#pets">Pets</Nav.Link>
-        <Nav.Link href="#contact">Contact</Nav.Link>
-        <Nav.Link href="#resume">Resume</Nav.Link>
-      </Nav>
+    <Navbar bg="light" expand="lg" className="justify-content">
+      <Navbar.Brand href="#">Jack Cole</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse>
+        <Nav className="justify-content-end">
+          <Nav.Item>
+            <Nav.Link href="#">About</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#pets">Pets</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#resume">Resume</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 };
