@@ -1,16 +1,24 @@
 import "./styles/App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import NavBar from "./components/NavBar.js";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+// import NavBar from "./components/NavBar.js";
+import Name from "./components/Name.js";
 
 const App = () => {
   return (
-    <div>
-      <Router>
-        <header>
-          <NavBar />
-        </header>
-      </Router>
-    </div>
+    <>
+      <Container fluid>
+        <Row>
+          <Col>
+            <div>
+              <Name />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 

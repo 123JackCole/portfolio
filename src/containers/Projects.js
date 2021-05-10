@@ -1,3 +1,4 @@
+import React from "react";
 import ProjectCard from "../components/ProjectCard.js";
 
 const Projects = () => {
