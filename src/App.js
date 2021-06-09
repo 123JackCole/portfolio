@@ -13,6 +13,7 @@ import Pets from "./containers/Pets.js";
 const App = () => {
   return (
     <>
+    {/* maybe add in material ui for templating? */}
       <Container>
         <Name />
         <About />
